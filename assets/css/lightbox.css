@@ -88,10 +88,11 @@ html.lb-disable-scrolling {
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -200,4 +201,20 @@ html.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+.video-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust the height as needed */
+  margin-top: 60px; /* Add margin to the top */
+}
+
+/* Set reasonable width and height for the video */
+#demo-video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
