@@ -55,55 +55,13 @@
 
 <body>
 <!-- ***** Preloader Start ***** -->
-<div id="preloader">
-    <div class="jumper">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
+<div id="preloader-container"></div>
+
 <!-- ***** Preloader End ***** -->
 
 <!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
-                        <img src="assets/images/wePrepLogo.png" alt="WePrep Logo"
-                             style="height: 30px; margin-right: 10px;">
-                        WePrep
-                    </a>                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li class="scroll-to-section">
-                            <a href="#top" class="active">Home</a>
-                        </li>
-                        <li class="scroll-to-section"><a href="#demo">Demo</a></li>
-                        <li class="scroll-to-section"><a href="howItWorks.html">How it Works</a></li>
-                        <li class="scroll-to-section"><a href="about.html">About Us</a></li>
-                        <li class="scroll-to-section"><a href="#features">Features</a></li>
-                        <li class="scroll-to-section"><a href="#milestones">Milestones</a></li>
-                        <li class="scroll-to-section">
-                            <a href="#reports">Reports</a>
-                        </li>
-                        <li class="scroll-to-section">
-                            <a href="https://github.com/weprepdev/platform" target="_blank"
-                            >Github</a
-                            >
-                        </li>
-                    </ul>
-                    <a class="menu-trigger">
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
+<div id="header-container"></div>
+
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Search Area ***** -->
@@ -750,29 +708,10 @@
 ***** Contact Us Area Ends ***** -->
 
 <!-- ***** Footer Start ***** -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-xs-12">
-                <div class="left-text-content">
-                    <p>Copyright &copy; 2024 - Design: Amirreza</p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xs-12">
-                <div class="right-text-content">
-                    <ul class="social-icons">
-                        <li><p>Github Link</p></li>
-                        <li>
-                            <a rel="nofollow" href="https://fb.com/templatemo"
-                            ><i class="fa fa-github"></i
-                            ></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<div id="footer-container"></div>
+<!-- ***** Footer End ***** -->
+
+
 
 <!-- jQuery -->
 <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -796,6 +735,10 @@
 
 <script>
     $(function () {
+        $("#preloader-container").load("reusableAssets/preloader.html");
+        $("#header-container").load("reusableAssets/header.html");
+        $("#footer-container").load("reusableAssets/footer.html");
+
         var selectedClass = "";
         $("p").click(function () {
             selectedClass = $(this).attr("data-rel");
