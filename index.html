@@ -712,7 +712,6 @@
 <!-- ***** Footer End ***** -->
 
 
-
 <!-- jQuery -->
 <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -736,7 +735,26 @@
 <script>
     $(function () {
         $("#preloader-container").load("reusableAssets/preloader.html");
-        $("#header-container").load("reusableAssets/header.html");
+        $("#header-container").load("reusableAssets/header.html", function () {
+            // Highlight the active navigation link based on the current URL
+            var path = window.location.pathname;
+            var page = path.split("/").pop();
+
+            switch (page) {
+                case "index.html":
+                    $("#home-link").addClass("active");
+                    break;
+                case "howItWorks.html":
+                    $("#how-it-works-link").addClass("active");
+                    break;
+                case "about.html":
+                    $("#about-us-link").addClass("active");
+                    break;
+                default:
+                    // Handle other cases or set a default active link
+                    break;
+            }
+        });
         $("#footer-container").load("reusableAssets/footer.html");
 
         var selectedClass = "";
