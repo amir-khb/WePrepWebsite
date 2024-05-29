@@ -19,16 +19,16 @@
     <link
             rel="stylesheet"
             type="text/css"
-            href="../assets/css/bootstrap.min.css"
+            href="assets/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"/>
 
-    <link rel="stylesheet" href="../assets/css/templatemo-breezed.css"/>
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css"/>
 
-    <link rel="stylesheet" href="../assets/css/owl-carousel.css"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel.css"/>
 
-    <link rel="stylesheet" href="../assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
 
     <style>
         .video-display {
@@ -55,7 +55,13 @@
 
 <body>
 <!-- ***** Preloader Start ***** -->
-<div id="preloader-container"></div>
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
 
 <!-- ***** Preloader End ***** -->
 
@@ -72,7 +78,7 @@
         <!-- Item -->
         <div class="item">
             <div class="img-fill">
-                <img src="../assets/images/slide-02.jpg" alt=""/>
+                <img src="assets/images/slide-02.jpg" alt=""/>
                 <div class="text-content">
                     <h3>About Us</h3>
                     <h5>Some cool one liner</h5>
@@ -141,7 +147,7 @@
                 professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
         </div>
         <div class="image1">
-            <img src="../assets/images/topImage.png" alt="Post a Job Opportunity">
+            <img src="assets/images/topImage.png" alt="Post a Job Opportunity">
         </div>
     </div>
 </div>
@@ -177,7 +183,7 @@
             </ul>
         </div>
         <div class="image1">
-            <img src="../assets/images/Izaan.jpg" alt="Post a Job Opportunity">
+            <img src="assets/images/Izaan.jpg" alt="Post a Job Opportunity">
         </div>
     </div>
     <div class="section1">
@@ -199,7 +205,7 @@
             </ul>
         </div>
         <div class="image1">
-            <img src="../assets/images/Faaiz.png" alt="Post a Job Opportunity">
+            <img src="assets/images/Faaiz.png" alt="Post a Job Opportunity">
         </div>
     </div>
     <div class="section1 reverse">
@@ -222,7 +228,7 @@
             </ul>
         </div>
         <div class="image1">
-            <img src="../assets/images/Amir.jpg" alt="Post a Job Opportunity">
+            <img src="assets/images/Amir.jpg" alt="Post a Job Opportunity">
         </div>
     </div>
     <div class="section1">
@@ -243,7 +249,7 @@
             </ul>
         </div>
         <div class="image1">
-            <img src="../assets/images/Ather.jpeg" alt="Post a Job Opportunity">
+            <img src="assets/images/Ather.jpeg" alt="Post a Job Opportunity">
         </div>
     </div>
     <div class="section1 reverse">
@@ -264,7 +270,7 @@
         </div>
 
         <div class="image1">
-            <img src="../assets/images/blankProfile.webp" alt="Post a Job Opportunity">
+            <img src="assets/images/blankProfile.webp" alt="Post a Job Opportunity">
         </div>
 
     </div>
@@ -276,29 +282,28 @@
 <!-- ***** Footer End ***** -->
 
 <!-- jQuery -->
-<script src="../assets/js/jquery-2.1.0.min.js"></script>
+<script src="assets/js/jquery-2.1.0.min.js"></script>
 
 <!-- Bootstrap -->
-<script src="../assets/js/popper.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
 <!-- Plugins -->
-<script src="../assets/js/owl-carousel.js"></script>
-<script src="../assets/js/scrollreveal.min.js"></script>
-<script src="../assets/js/waypoints.min.js"></script>
-<script src="../assets/js/jquery.counterup.min.js"></script>
-<script src="../assets/js/imgfix.min.js"></script>
-<script src="../assets/js/slick.js"></script>
-<script src="../assets/js/lightbox.js"></script>
-<script src="../assets/js/isotope.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/isotope.js"></script>
 
 <!-- Global Init -->
-<script src="../assets/js/custom.js"></script>
+<script src="assets/js/custom.js"></script>
 
 <script>
     $(function () {
-        $("#preloader-container").load("/reusableAssets/preloader.html");
-        $("#header-container").load("/reusableAssets/header.html", function () {
+        $("#header-container").load("reusableAssets/header.html", function () {
             // Highlight the active navigation link based on the current URL
             var path = window.location.pathname;
             var page = path.split("/").pop();
@@ -318,7 +323,7 @@
                     break;
             }
         });
-        $("#footer-container").load("/reusableAssets/footer.html");
+        $("#footer-container").load("reusableAssets/footer.html");
         var selectedClass = "";
         $("p").click(function () {
             selectedClass = $(this).attr("data-rel");

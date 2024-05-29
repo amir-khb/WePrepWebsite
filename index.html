@@ -65,52 +65,160 @@
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Search Area ***** -->
+<style>
+    .container-5678 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
 
-<!-- ***** Main Banner Area Start ***** -->
-<div class="main-banner header-text" id="top">
-    <div class="Modern-Slider">
-        <!-- Item -->
-        <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-01.jpg" alt=""/>
-                <div class="text-content">
-                    <h3>Welcome To WePrep</h3>
-                    <h5>Prepare, Preform, Prevail</h5>
-                </div>
-            </div>
+    .image-content-5678 {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .image-content-5678 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .text-content-5678 {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .text-content-5678 h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .text-content-5678 button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .business-btn-5678 {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+    .demo-btn-5678 {
+        background-color: #f8f9fa;
+        color: #333;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+    }
+
+    .text-content-5678 p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .logos-5678 img {
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-5678 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-content-5678, .text-content-5678 {
+            max-width: 100%;
+        }
+
+        .text-content-5678 {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .demo-btn-5678 {
+            margin-left: 0;
+        }
+    }
+</style>
+
+<div class="container-5678">
+    <div class="image-content-5678">
+        <img src="assets/images/topImage.png" alt="Team Image">
+    </div>
+    <div class="text-content-5678">
+        <h2>Leverage WePrep's AI for tailored mock interviews, expert feedback, and personalized preparation.</h2>
+        <div>
+            <button class="business-btn-5678">Join Our Waiting List</button>
+            <button class="demo-btn-5678">Contact Us</button>
         </div>
-        <!-- // Item -->
-        <!-- Item -->
-        <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-02.jpg" alt=""/>
-                <div class="text-content">
-                    <h3>Live and Recorded Practice Sessions</h3>
-                    <h5>AI-Generated Mock Interviews</h5>
-                </div>
-            </div>
+        <div class="logos-5678">
+
         </div>
-        <!-- // Item -->
-        <!-- Item -->
-        <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-03.jpg" alt=""/>
-                <div class="text-content">
-                    <h3>Emotion Analysis and Feedback</h3>
-                    <h5>
-                        Detailed video analysis in terms of attention, body language,
-                        and facial expression.
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <!-- // Item -->
     </div>
 </div>
-<div class="scroll-down scroll-to-section">
-    <a href="#about"><i class="fa fa-arrow-down"></i></a>
-</div>
-<!-- ***** Main Banner Area End ***** -->
+
+
+<!--&lt;!&ndash; ***** Main Banner Area Start ***** &ndash;&gt;-->
+<!--<div class="main-banner header-text" id="top">-->
+<!--    <div class="Modern-Slider">-->
+<!--        &lt;!&ndash; Item &ndash;&gt;-->
+<!--        <div class="item">-->
+<!--            <div class="img-fill">-->
+<!--                <img src="assets/images/slide-01.jpg" alt=""/>-->
+<!--                <div class="text-content">-->
+<!--                    <h3>Welcome To WePrep</h3>-->
+<!--                    <h5>Prepare, Preform, Prevail</h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; // Item &ndash;&gt;-->
+<!--        &lt;!&ndash; Item &ndash;&gt;-->
+<!--        <div class="item">-->
+<!--            <div class="img-fill">-->
+<!--                <img src="assets/images/slide-02.jpg" alt=""/>-->
+<!--                <div class="text-content">-->
+<!--                    <h3>Live and Recorded Practice Sessions</h3>-->
+<!--                    <h5>AI-Generated Mock Interviews</h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; // Item &ndash;&gt;-->
+<!--        &lt;!&ndash; Item &ndash;&gt;-->
+<!--        <div class="item">-->
+<!--            <div class="img-fill">-->
+<!--                <img src="assets/images/slide-03.jpg" alt=""/>-->
+<!--                <div class="text-content">-->
+<!--                    <h3>Emotion Analysis and Feedback</h3>-->
+<!--                    <h5>-->
+<!--                        Detailed video analysis in terms of attention, body language,-->
+<!--                        and facial expression.-->
+<!--                    </h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; // Item &ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="scroll-down scroll-to-section">-->
+<!--    <a href="#about"><i class="fa fa-arrow-down"></i></a>-->
+<!--</div>-->
+<!--&lt;!&ndash; ***** Main Banner Area End ***** &ndash;&gt;-->
 
 <!-- ***** Video Display Start ***** -->
 <!-- ***** Video Display Start ***** -->

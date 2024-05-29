@@ -8,10 +8,10 @@
                         WePrep
                     </a>
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="/index.html" id="home-link">Home</a></li>
+                        <li class="scroll-to-section"><a href="index.html" id="home-link">Home</a></li>
                         <li class="scroll-to-section"><a href="/#demo" id="demo-link">Demo</a></li>
-                        <li class="scroll-to-section"><a href="./pages/howItWorks.html" id="how-it-works-link">How it Works</a></li>
-                        <li class="scroll-to-section"><a href="./pages/about.html" id="about-us-link">About Us</a></li>
+                        <li class="scroll-to-section"><a href="howItWorks.html" id="how-it-works-link">How it Works</a></li>
+                        <li class="scroll-to-section"><a href="about.html" id="about-us-link">About Us</a></li>
                         <li class="scroll-to-section"><a href="/#features" id="features-link">Features</a></li>
                         <li class="scroll-to-section"><a href="/#milestones" id="milestones-link">Milestones</a></li>
                         <li class="scroll-to-section"><a href="/#reports" id="reports-link">Reports</a></li>
@@ -22,4 +22,41 @@
             </div>
         </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div")
+                    .not("." + selectedClass)
+                    .fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+            });
+        });
+    </script>
 </header>
