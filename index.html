@@ -95,13 +95,18 @@
         padding-left: 20px;
     }
 
+    .arrow-content-5678 {
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
     .text-content-5678 h2 {
         font-size: 24px;
         font-weight: normal;
         color: #333;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.5;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Added space */
     }
 
     .text-content-5678 button {
@@ -142,7 +147,7 @@
             align-items: flex-start;
         }
 
-        .image-content-5678, .text-content-5678 {
+        .image-content-5678, .text-content-5678, .arrow-content-5678 {
             max-width: 100%;
         }
 
@@ -154,12 +159,19 @@
         .demo-btn-5678 {
             margin-left: 0;
         }
+
+        .arrow-content-5678 {
+            display: none; /* Hide arrow on mobile */
+        }
     }
 </style>
 
 <div class="container-5678">
     <div class="image-content-5678">
         <img src="assets/images/topImage.png" alt="Team Image">
+    </div>
+    <div class="arrow-content-5678">
+        <img src="assets/images/arrow.png" alt="Arrow" style="height: 50px;">
     </div>
     <div class="text-content-5678">
         <h2>Leverage WePrep's AI for tailored mock interviews, expert feedback, and personalized preparation.</h2>
@@ -171,7 +183,10 @@
 
         </div>
     </div>
+
+
 </div>
+
 
 
 <!--&lt;!&ndash; ***** Main Banner Area Start ***** &ndash;&gt;-->
