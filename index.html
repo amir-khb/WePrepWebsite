@@ -307,14 +307,138 @@
 </div>
 <!-- ***** Video Display End ***** -->
 
+<style>
+    .container5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .image-container5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+        width: 100px;
+    }
+
+    .image-container5 img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .image-container5 img.default-image {
+        opacity: 1;
+    }
+
+    .text-container5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin: 10px 20px;
+    }
+
+    .text-box5 {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        cursor: pointer;
+    }
+
+    .text-box5::before {
+        content: '';
+        width: 5px;
+        height: 100%;
+        background-color: #007bff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .container5 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container5 {
+            margin: 20px 0;
+        }
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="section-heading" id="features1" style="margin-left: 17%">
+            <h2>Your all in one solution for interview preparation</h2>
+        </div>
+    </div>
+</div>
+<div class="container5">
+
+    <div class="text-container5">
+        <div class="text-box5" onmouseover="showImage(0)" onclick="goToSection('section1')">Realistic Mock Interviews
+        </div>
+        <div class="text-box5" onmouseover="showImage(1)" onclick="goToSection('section1')">Speech and Language
+            Analysis
+        </div>
+        <div class="text-box5" onmouseover="showImage(2)" onclick="goToSection('section2')">Vocal and Speech Tone</div>
+    </div>
+    <div class="image-container5">
+        <img src="assets/images/mock1.png" alt="Hiring Assistant Image" class="default-image">
+        <img src="assets/images/analysis1.png" alt="Hiring Assistant Image" class="second-image">
+        <img src="assets/images/speech1.png" alt="Hiring Assistant Image" class="third-image">
+        <img src="assets/images/attention1.png" alt="Hiring Assistant Image" class="fourth-image">
+        <img src="assets/images/body1.png" alt="Hiring Assistant Image" class="fifth-image">
+        <img src="assets/images/voice1.png" alt="Hiring Assistant Image" class="sixth-image">
+    </div>
+    <div class="text-container5">
+        <div class="text-box5" onmouseover="showImage(3)" onclick="goToSection('section3')">Attention Levels</div>
+        <div class="text-box5" onmouseover="showImage(4)" onclick="goToSection('section4')">Body Language and Facial
+            Expressions
+        </div>
+        <div class="text-box5" onmouseover="showImage(5)" onclick="goToSection('section5')">Articulation and Clarity
+        </div>
+    </div>
+</div>
+<script>
+    function showImage(index) {
+        const images = document.querySelectorAll('.image-container5 img');
+        images.forEach((img, i) => {
+            img.classList.toggle('default-image', i === index);
+        });
+    }
+
+    function goToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+
 <!-- ***** About Area Starts ***** -->
 <section class="section" id="about">
     <div class="container">
         <div class="row">
-
-
         </div>
-
         <style>
             .section1 {
                 font-family: 'Roboto', sans-serif;
@@ -363,7 +487,7 @@
         </div>
 
         <div class="container">
-            <div class="section1">
+            <div class="section1" id="section1">
                 <div class="text1">
                     <h2><strong>1. Realistic Mock Interview</strong></h2>
                     <p>This feature utilizes advanced AI technology to create highly realistic interview scenarios.
@@ -377,7 +501,7 @@
                     <img src="assets/images/img11.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section2">
                 <div class="text1">
                     <h2><strong>2. Speech and Language Analysis</strong></h2>
                     <p>Our application offers a comprehensive analysis of your speaking performance using various
@@ -392,7 +516,7 @@
                     <img src="assets/images/img1.png" alt="Initial Screening">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section3">
                 <div class="text1">
                     <h2><strong>3. Vocal and Speech Tone</strong></h2>
                     <p>This feature measures various emotions such as anger, disgust, fear, happiness, neutrality,
@@ -405,7 +529,7 @@
                     <img src="assets/images/img2.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section4">
                 <div class="text1">
                     <h2><strong>4. Attention Levels</strong></h2>
                     <p>This feature measures attention levels in real-time, providing a detailed graph that shows
@@ -419,7 +543,7 @@
                     <img src="assets/images/img3.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section5">
                 <div class="text1">
                     <h2><strong>5. Body Language and Facial Expressions</strong></h2>
                     <p>This feature tracks a range of emotions including anger, disgust, fear, happiness, neutrality,
@@ -433,7 +557,7 @@
                     <img src="assets/images/img4.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section6">
                 <div class="text1">
                     <h2><strong>6. Articulation and Clarity</strong></h2>
                     <p>This feature measures how well you pronounce and enunciate words, providing a visual
@@ -446,7 +570,7 @@
                     <img src="assets/images/img5.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-            <div class="section1">
+            <div class="section1" id="section7">
                 <div class="text1">
                     <h2><strong>7. Detailed Expert Feedback</strong></h2>
                     <p>Users receive specific comments highlighting the strengths of their responses, along with
@@ -460,80 +584,201 @@
                     <img src="assets/images/img6.png" alt="Post a Job Opportunity">
                 </div>
             </div>
-
         </div>
-
-    </div>
-
-
-    <style>
-        .responsive-image {
-            width: 200%;
-            max-width: 200%;
-            height: auto;
-        }
-
-        @media (max-width: 767px) {
-            .responsive-image {
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            .responsive-image {
-                width: 200%;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .responsive-image {
-                width: 200%;
-            }
-        }
-    </style>
-
-    <!-- Milestones Section -->
-    <section class="section" id="milestones" style="margin-top: 50px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2 style="margin-bottom: 20px;">Milestones</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div>
-                        <ul style="list-style-type: disc; padding-left: 20px;">
-
-                            <li class="override-bullet" style="margin-bottom: 10px;"> Received positive feedback from
-                                multiple CEOs/CTOs/Senior Developers
-                            </li>
-                            <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>$1000</b> free credits
-                                from <b>AWS</b></li>
-                            <li class="override-bullet" style="margin-bottom: 10px;"> Won <b>First place</b> in the
-                                Bilkentpreneurs Challenge 2024!
-                            </li>
-                            <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>100,000TL</b> award
-                                for best project in Bilkentpreneurs Challenge 2024!
-                            </li>
-                            <li class="override-bullet" style="margin-bottom: 10px;"> Received positive and constructive
-                                feedback from multiple innovation experts
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Milestones Section -->
-
-    </div>
     </div>
 </section>
+
+
+<style>
+    .responsive-image {
+        width: 200%;
+        max-width: 200%;
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        .responsive-image {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .responsive-image {
+            width: 200%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .responsive-image {
+            width: 200%;
+        }
+    }
+</style>
+
+<!--&lt;!&ndash; Milestones Section &ndash;&gt;-->
+<!--<section class="section" id="milestones" style="margin-top: 50px;">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div class="section-heading">-->
+<!--                    <h2 style="margin-bottom: 20px;">Milestones</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div>-->
+<!--                    <ul style="list-style-type: disc; padding-left: 20px;">-->
+
+<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received positive feedback from-->
+<!--                            multiple CEOs/CTOs/Senior Developers-->
+<!--                        </li>-->
+<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>$1000</b> free credits-->
+<!--                            from <b>AWS</b></li>-->
+<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Won <b>First place</b> in the-->
+<!--                            Bilkentpreneurs Challenge 2024!-->
+<!--                        </li>-->
+<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>100,000TL</b> award-->
+<!--                            for best project in Bilkentpreneurs Challenge 2024!-->
+<!--                        </li>-->
+<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received positive and constructive-->
+<!--                            feedback from multiple innovation experts-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End of Milestones Section &ndash;&gt;-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
 <!-- ***** About Area Ends ***** -->
 
+<!-- ***** Search Area ***** -->
+<style>
+    .container-5678 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .image-content-5678 {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .image-content-5678 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .text-content-5678 {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .arrow-content-5678 {
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
+    .text-content-5678 h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+    }
+
+    .text-content-5678 p {
+        font-size: 15px;
+        font-weight: normal;
+        color: #8a8a8a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+    .text-content-5678 button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .business-btn-5678 {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+    .demo-btn-5678 {
+        background-color: #f8f9fa;
+        color: #333;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+    }
+
+
+    .logos-5678 img {
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-5678 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-content-5678, .text-content-5678, .arrow-content-5678 {
+            max-width: 100%;
+        }
+
+        .text-content-5678 {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .demo-btn-5678 {
+            margin-left: 0;
+        }
+
+        .arrow-content-5678 {
+            display: none; /* Hide arrow on mobile */
+        }
+    }
+</style>
+
+<div class="container-5678" style="align-content: center; display: flex; justify-content: center; align-items: center;">
+
+    <div class="text-content-5678" >
+        <h2 style="text-align: center">What are you waiting for? Join our waitlist now to experience tailored mock interviews, expert feedback, and
+            personalized preparation with WePrep's AI!</h2>
+        <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
+            <button class="business-btn-5678" >Join Our Waiting List</button>
+            <button class="demo-btn-5678" >Contact Us</button>
+        </div>
+        <div class="logos-5678">
+
+        </div>
+    </div>
+</div>
 
 <!-- ***** Footer Start ***** -->
 <div id="footer-container"></div>
