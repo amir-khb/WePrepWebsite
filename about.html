@@ -187,7 +187,7 @@
         <h2>We Want to prepare You for Your Future</h2>
         <div>
             <button class="business-btn-5678">Join Our Waiting List</button>
-            <button class="demo-btn-5678">Contact Us</button>
+            <button class="demo-btn-5678" onclick="openDemoPage()">Contact Us</button>
         </div>
 
     </div>
@@ -453,6 +453,11 @@
             }, 500);
         });
     });
+</script>
+<script>
+    function openDemoPage() {
+        window.location.href = 'contactUs.html';
+    }
 </script>
 </body>
 </html>

@@ -185,11 +185,9 @@
         <h2>Leverage WePrep's AI for tailored mock interviews, expert feedback, and personalized preparation.</h2>
         <div>
             <button class="business-btn-5678">Join Our Waiting List</button>
-            <button class="demo-btn-5678">Contact Us</button>
+            <button class="demo-btn-5678" onclick="openDemoPage()" >Contact Us</button>
         </div>
-        <div class="logos-5678">
 
-        </div>
     </div>
 </div>
 
@@ -774,7 +772,7 @@
             personalized preparation with WePrep's AI!</h2>
         <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
             <button class="business-btn-5678" >Join Our Waiting List</button>
-            <button class="demo-btn-5678" >Contact Us</button>
+            <button class="demo-btn-5678" onclick="openDemoPage()">Contact Us</button>
         </div>
         <div class="logos-5678">
 
@@ -825,6 +823,9 @@
                 case "about.html":
                     $("#about-us-link").addClass("active");
                     break;
+                case "contactUs.html":
+                    $("#contact-us-link").addClass("active");
+                    break;
                 default:
                     // Handle other cases or set a default active link
                     break;
@@ -845,6 +846,11 @@
             }, 500);
         });
     });
+</script>
+<script>
+    function openDemoPage() {
+        window.location.href = 'contactUs.html';
+    }
 </script>
 </body>
 </html>
