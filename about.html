@@ -186,7 +186,7 @@
         <h1>About Us</h1>
         <h2>We Want to prepare You for Your Future</h2>
         <div>
-            <button class="business-btn-5678">Join Our Waiting List</button>
+            <button class="business-btn-5678" data-toggle="modal" data-target="#joinWaitlistModal">Join Our Waiting List</button>
             <button class="demo-btn-5678" onclick="openDemoPage()">Contact Us</button>
         </div>
 
@@ -393,6 +393,9 @@
 
 
 </div>
+
+<div id="waitingListForm"></div>
+
 <!-- ***** Footer Start ***** -->
 <div id="footer-container"></div>
 <!-- ***** Footer End ***** -->
@@ -419,6 +422,8 @@
 
 <script>
     $(function () {
+        $("#waitingListForm").load("reusableAssets/waitingListForm.html");
+
         $("#header-container").load("reusableAssets/header.html", function () {
             // Highlight the active navigation link based on the current URL
             var path = window.location.pathname;

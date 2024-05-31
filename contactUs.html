@@ -228,13 +228,16 @@
         <h2 style="text-align: center">What are you waiting for? Join our waitlist now to experience tailored mock interviews, expert feedback, and
             personalized preparation with WePrep's AI!</h2>
         <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
-            <button class="business-btn-5678" >Join Our Waiting List</button>
+            <button class="business-btn-5678" data-toggle="modal" data-target="#joinWaitlistModal">Join Our Waiting List</button>
         </div>
         <div class="logos-5678">
 
         </div>
     </div>
 </div>
+
+<div id="waitingListForm"></div>
+
 
 <!-- ***** Footer Start ***** -->
 <div id="footer-container"></div>
@@ -262,6 +265,8 @@
 
 <script>
     $(function () {
+        $("#waitingListForm").load("reusableAssets/waitingListForm.html");
+
         $("#header-container").load("reusableAssets/header.html", function () {
             // Highlight the active navigation link based on the current URL
             var path = window.location.pathname;

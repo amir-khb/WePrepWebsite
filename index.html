@@ -184,7 +184,7 @@
     <div class="text-content-5678">
         <h2>Leverage WePrep's AI for tailored mock interviews, expert feedback, and personalized preparation.</h2>
         <div>
-            <button class="business-btn-5678">Join Our Waiting List</button>
+            <button class="business-btn-5678" data-toggle="modal" data-target="#joinWaitlistModal">Join Our Waiting List</button>
             <button class="demo-btn-5678" onclick="openDemoPage()" >Contact Us</button>
         </div>
 
@@ -615,49 +615,7 @@
     }
 </style>
 
-<!--&lt;!&ndash; Milestones Section &ndash;&gt;-->
-<!--<section class="section" id="milestones" style="margin-top: 50px;">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12">-->
-<!--                <div class="section-heading">-->
-<!--                    <h2 style="margin-bottom: 20px;">Milestones</h2>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12">-->
-<!--                <div>-->
-<!--                    <ul style="list-style-type: disc; padding-left: 20px;">-->
 
-<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received positive feedback from-->
-<!--                            multiple CEOs/CTOs/Senior Developers-->
-<!--                        </li>-->
-<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>$1000</b> free credits-->
-<!--                            from <b>AWS</b></li>-->
-<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Won <b>First place</b> in the-->
-<!--                            Bilkentpreneurs Challenge 2024!-->
-<!--                        </li>-->
-<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received <b>100,000TL</b> award-->
-<!--                            for best project in Bilkentpreneurs Challenge 2024!-->
-<!--                        </li>-->
-<!--                        <li class="override-bullet" style="margin-bottom: 10px;"> Received positive and constructive-->
-<!--                            feedback from multiple innovation experts-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End of Milestones Section &ndash;&gt;-->
-
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!-- ***** About Area Ends ***** -->
-
-<!-- ***** Search Area ***** -->
 <style>
     .container-5678 {
         display: flex;
@@ -771,7 +729,7 @@
         <h2 style="text-align: center">What are you waiting for? Join our waitlist now to experience tailored mock interviews, expert feedback, and
             personalized preparation with WePrep's AI!</h2>
         <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
-            <button class="business-btn-5678" >Join Our Waiting List</button>
+            <button class="business-btn-5678" data-toggle="modal" data-target="#joinWaitlistModal">Join Our Waiting List</button>
             <button class="demo-btn-5678" onclick="openDemoPage()">Contact Us</button>
         </div>
         <div class="logos-5678">
@@ -779,6 +737,10 @@
         </div>
     </div>
 </div>
+
+
+<div id="waitingListForm"></div>
+
 
 <!-- ***** Footer Start ***** -->
 <div id="footer-container"></div>
@@ -807,6 +769,8 @@
 
 <script>
     $(function () {
+        $("#waitingListForm").load("reusableAssets/waitingListForm.html");
+
         $("#preloader-container").load("reusableAssets/preloader.html");
         $("#header-container").load("reusableAssets/header.html", function () {
             // Highlight the active navigation link based on the current URL
