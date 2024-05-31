@@ -13,7 +13,7 @@
             rel="stylesheet"
     />
 
-    <title>WePrep</title>
+    <title>How It Works | WePrep</title>
 
     <!-- Additional CSS Files -->
     <link
@@ -55,7 +55,13 @@
 
 <body>
 <!-- ***** Preloader Start ***** -->
-<div id="preloader-container"></div>
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
 
 <!-- ***** Preloader End ***** -->
 
@@ -196,12 +202,17 @@
         <h1 style="text-align: center">How WePrep Works</h1>
         <h2 style="text-align: center">Want to see our product in action? Click below to view a video demo of WePrep and get a rundown of all the features we provide!</h2>
         <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
-            <button class="business-btn-5678" >WePrep Demo</button>
+            <button class="business-btn-5678" onclick="openDemoPage()">WePrep Demo</button>
         </div>
         <div class="logos-5678">
         </div>
     </div>
 </div>
+<script>
+    function openDemoPage() {
+        window.location.href = 'index.html#weprepDemo';
+    }
+</script>
 
 <section class="section" id="about">
     <div class="container">
