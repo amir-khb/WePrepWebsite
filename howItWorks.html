@@ -1,328 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content=""/>
-  <meta name="author" content=""/>
-  <link
-          href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
-          rel="stylesheet"
-  />
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet"
+    />
 
-  <title>WePrep</title>
+    <title>WePrep</title>
 
-  <!-- Additional CSS Files -->
-  <link
-          rel="stylesheet"
-          type="text/css"
-          href="assets/css/bootstrap.min.css"
-  />
+    <!-- Additional CSS Files -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/bootstrap.min.css"
+    />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"/>
 
-  <link rel="stylesheet" href="assets/css/templatemo-breezed.css"/>
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css"/>
 
-  <link rel="stylesheet" href="assets/css/owl-carousel.css"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel.css"/>
 
-  <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
 
-  <style>
-    .video-display {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60vh; /* Adjust the height as needed */
-      margin-top: 60px; /* Add margin to the top */
-    }
+    <style>
+        .video-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh; /* Adjust the height as needed */
+            margin-top: 60px; /* Add margin to the top */
+        }
 
-    /* Set reasonable width and height for the video */
-    #demo-video {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      max-height: 100%;
-    }
+        /* Set reasonable width and height for the video */
+        #demo-video {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
 
-    .override-bullet {
-      list-style: circle
-    }
-  </style>
+        .override-bullet {
+            list-style: circle
+        }
+    </style>
 </head>
 
 <body>
-<!-- ***** Preloader Start *****-->
-<div id="preloader">
-  <div class="jumper">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
+<!-- ***** Preloader Start ***** -->
+<div id="preloader-container"></div>
+
 <!-- ***** Preloader End ***** -->
 
 <!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="main-nav">
-          <!-- ***** Logo Start ***** -->
-          <a href="index.html" class="logo" style="display: flex; align-items: center;">
-            <img src="assets/images/wePrepLogo.png" alt="WePrep Logo"
-                 style="height: 30px; margin-right: 10px;">
-            WePrep
-          </a>                    <!-- ***** Logo End ***** -->
-          <!-- ***** Menu Start ***** -->
-          <ul class="nav">
-            <li class="scroll-to-section">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="scroll-to-section"><a href="#demo">Demo</a></li>
-            <li class="scroll-to-section"><a href="#howItWorks" class="active">How it Works</a></li>
-            <li class="scroll-to-section"><a href="#about" >About Us</a></li>
-            <li class="scroll-to-section"><a href="#features">Features</a></li>
-            <li class="scroll-to-section"><a href="#milestones">Milestones</a></li>
-            <li class="scroll-to-section">
-              <a href="index.html#reports">Reports</a>
-            </li>
-            <li class="scroll-to-section">
-              <a href="https://github.com/weprepdev/platform" target="_blank"
-              >Github</a
-              >
-            </li>
-          </ul>
-          <a class="menu-trigger">
-            <span>Menu</span>
-          </a>
-          <!-- ***** Menu End ***** -->
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
+<div id="header-container"></div>
+
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Search Area ***** -->
-
-<!-- ***** Main Banner Area Start ***** -->
-<div class="main-banner header-text" id="top">
-  <div class="Modern-Slider">
-    <!-- Item -->
-    <div class="item">
-      <div class="img-fill">
-        <img src="assets/images/slide-02.jpg" alt=""/>
-        <div class="text-content">
-          <h3>How WePrep works</h3>
-          <h5>Improve your interview abilities with WePrep</h5>
-          <button onclick="window.location.href='index.html'">Learn more</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="scroll-down scroll-to-section">
-  <a href="#about"><i class="fa fa-arrow-down"></i></a>
-</div>
-
 <style>
-  .section1 {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    .container-5678 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
 
-  .text1 {
-    flex: 1;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+    .circle-container {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #5dcad1;
+        color: #004aad;
+        text-align: center;
+        font-weight: bold;
+        line-height: 50px;
+    }
 
-  .text1 h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
+    .circle-container span {
+        font-size: 18px;
+    }
 
-  .text1 p {
-    color: #666;
-    margin-bottom: 20px;
-  }
+    .image-content-5678 {
+        flex: 1;
+        max-width: 50%;
+    }
 
-  .image1 {
-    flex: 1;
-    max-width: 400px;
-  }
+    .image-content-5678 img {
+        width: 100%;
+        border-radius: 10px;
+    }
 
-  .image1 img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
+    .text-content-5678 {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+    }
 
-  .reverse {
-    flex-direction: row-reverse;
-  }
+    .arrow-content-5678 {
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
+    .text-content-5678 h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+    }
+
+    .text-content-5678 p {
+        font-size: 15px;
+        font-weight: normal;
+        color: #8a8a8a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+    .text-content-5678 button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .business-btn-5678 {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+    .demo-btn-5678 {
+        background-color: #f8f9fa;
+        color: #333;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+    }
+
+
+    .logos-5678 img {
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-5678 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-content-5678, .text-content-5678, .arrow-content-5678 {
+            max-width: 100%;
+        }
+
+        .text-content-5678 {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .demo-btn-5678 {
+            margin-left: 0;
+        }
+
+        .arrow-content-5678 {
+            display: none; /* Hide arrow on mobile */
+        }
+    }
 </style>
 
-
-
-
-<div class="container">
-  <div class="row">
-
-    <div class="col-lg-12">
-      <div class="section-heading">
-      </div>
+<div class="container-5678" style="align-content: center; display: flex; justify-content: center; align-items: center;">
+    <div class="image-content-5678">
+        <img src="assets/images/woman-smiling-interview.jpeg" alt="A woman taking an online interview" style="margin-right: 40px;">
     </div>
-  </div>
-  <div class="section1 reverse">
-    <div class="text1">
-      <h2><strong>Izaan Aamir</strong></h2>
-      <p>Leverage WePrep's cutting-edge AI models for realistic mock interviews, detailed expert feedback on your
-        responses, and personalized preparation roadmaps to maximize your chances of success in various
-        professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
-
-      <ul>
-        <a
-                href="https://github.com/izaanaamir"
-                target="_blank"
-        ><i class="fa fa-github"></i
-        ></a>
-        <a
-                href="https://www.linkedin.com/in/izaanaamir/"
-                target="_blank"
-        ><i class="fa fa-linkedin"></i
-        ></a>
-      </ul>
+    <div class="text-content-5678" >
+        <h1 style="text-align: center">How WePrep Works</h1>
+        <h2 style="text-align: center">Want to see our product in action? Click below to view a video demo of WePrep and get a rundown of all the features we provide!</h2>
+        <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
+            <button class="business-btn-5678" >WePrep Demo</button>
+        </div>
+        <div class="logos-5678">
+        </div>
     </div>
-    <div class="image1">
-      <img src="assets/images/Izaan.jpg" alt="Post a Job Opportunity">
-    </div>
-  </div>
-  <div class="section1">
-    <div class="text1">
-      <h2><strong>Faaiz Khan</strong></h2>
-      <p>Leverage WePrep's cutting-edge AI models for realistic mock interviews, detailed expert feedback on your
-        responses, and personalized preparation roadmaps to maximize your chances of success in various
-        professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
-
-      <ul>
-        <a href="#" target="_blank"
-        ><i class="fa fa-github"></i
-        ></a>
-        <a
-                href="https://www.linkedin.com/in/faaizkhan4444/"
-                target="_blank"
-        ><i class="fa fa-linkedin"></i
-        ></a>
-      </ul>
-    </div>
-    <div class="image1">
-      <img src="assets/images/Faaiz.png" alt="Post a Job Opportunity">
-    </div>
-  </div>
-  <div class="section1 reverse">
-    <div class="text1">
-      <h2><strong>Amirreza Khoshbakht</strong></h2>
-      <p>Leverage WePrep's cutting-edge AI models for realistic mock interviews, detailed expert feedback on your
-        responses, and personalized preparation roadmaps to maximize your chances of success in various
-        professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
-      <ul>
-        <a
-                href="https://github.com/amir-khb/amir-khb"
-                target="_blank"
-        ><i class="fa fa-github"></i
-        ></a>
-        <a
-                href="https://www.linkedin.com/in/amirreza-khoshbakht-2b9558171/"
-                target="_blank"
-        ><i class="fa fa-linkedin"></i
-        ></a>
-      </ul>
-    </div>
-    <div class="image1">
-      <img src="assets/images/Amir.jpg" alt="Post a Job Opportunity">
-    </div>
-  </div>
-  <div class="section1">
-    <div class="text1">
-      <h2><strong>Maher Ather Ilyas</strong></h2>
-      <p>Leverage WePrep's cutting-edge AI models for realistic mock interviews, detailed expert feedback on your
-        responses, and personalized preparation roadmaps to maximize your chances of success in various
-        professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
-
-      <ul>
-        <a href="#" target="_blank"
-        ><i class="fa fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/athar-ilyas/"
-           target="_blank"
-        ><i class="fa fa-linkedin"></i
-        ></a>
-      </ul>
-    </div>
-    <div class="image1">
-      <img src="assets/images/Ather.jpeg" alt="Post a Job Opportunity">
-    </div>
-  </div>
-  <div class="section1 reverse">
-    <div class="text1">
-      <h2><strong>Arshia Bakhshayesh</strong></h2>
-      <p>Leverage WePrep's cutting-edge AI models for realistic mock interviews, detailed expert feedback on your
-        responses, and personalized preparation roadmaps to maximize your chances of success in various
-        professional endeavors such as interviews, presentations, sales pitches, or video advertisements.</p>
-      <ul>
-        <a href="#" target="_blank"
-        ><i class="fa fa-github"></i
-        ></a>
-        <a href="#" target="_blank"
-        ><i class="fa fa-linkedin"></i
-        ></a>
-      </ul>
-
-    </div>
-
-    <div class="image1">
-      <img src="assets/images/blankProfile.webp" alt="Post a Job Opportunity">
-    </div>
-
-  </div>
-
-
 </div>
-<!-- ***** Footer Start ***** -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-xs-12">
-        <div class="left-text-content">
-          <p>Copyright &copy; 2024 - Design: Amirreza</p>
+
+<section class="section" id="about">
+    <div class="container">
+        <div class="row">
         </div>
-      </div>
-      <div class="col-lg-6 col-xs-12">
-        <div class="right-text-content">
-          <ul class="social-icons">
-            <li><p>Github Link</p></li>
-            <li>
-              <a rel="nofollow" href="https://fb.com/templatemo"
-              ><i class="fa fa-github"></i
-              ></a>
-            </li>
-          </ul>
+        <style>
+            .section1 {
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .text1 {
+                flex: 1;
+                margin-right: 20px;
+            }
+
+            .text1 h2 {
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .text1 p {
+                color: #666;
+                margin-bottom: 20px;
+            }
+
+            .image1 {
+                flex: 1;
+                max-width: 400px;
+            }
+
+            .image1 img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading" id="features">
+                    <h2>Step-By-Step Guide</h2>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container">
+            <div class="section1" id="section1">
+                <div class="circle-container">
+                    <span contenteditable="true">1</span>
+                </div>
+                <div class="text-content-5678">
+                    <h2><strong>Start a Practice Session</strong></h2>
+                    <p>
+                        Choose between a multitude of use-cases: <b>Mock Interviews</b>, <b>Presentation Practices</b>, <b>Sales Pitches</b>, and more. Fill out a short form detailing your needs
+                        and what you are preparing for. Then simply press start and dive right into practice completely tailored to your needs.
+                    </p>
+                </div>
+                <div class="image1">
+                    <img src="assets/images/start-new-session.png" alt="Start a New Practice Session">
+                </div>
+            </div>
+            <div class="section1" id="section1">
+                <div class="circle-container">
+                    <span contenteditable="true">2</span>
+                </div>
+                <div class="text-content-5678">
+                    <h2><strong>Lights, Camera, Practice</strong></h2>
+                    <p>
+                        Adjust your settings and start with your practice session completely adjusted and created to the context provided by you. Complete your practice and let WePrep analyze and track
+                        your <b>video</b>, <b>audio</b>, and <b>speech</b> while you focus on doing your best and giving your all.
+                    </p>
+                </div>
+                <div class="image1">
+                    <img src="assets/images/mock-interview.png" alt="Mock Interview">
+                </div>
+            </div>
+            <div class="section1" id="section1">
+                <div class="circle-container">
+                    <span contenteditable="true">3</span>
+                </div>
+                <div class="text-content-5678">
+                    <h2><strong>Track Your Progress</strong></h2>
+                    <p>
+                        View and interact with all your data and feedback provided to you by WePrep. Click on any point in the graph to view the exact frame that you would like to focus on. WePrep makes
+                        your job easier and helps you improve and self-analyze in a comfortable, detailed, and quick manner
+                    </p>
+                </div>
+                <div class="image1">
+                    <img src="assets/images/feedback.png" alt="Feedback">
+                </div>
+            </div>
+            <div class="section1" id="section1">
+                <div class="circle-container">
+                    <span contenteditable="true">4</span>
+                </div>
+                <div class="text-content-5678">
+                    <h2><strong>Follow Your Roadmap to Success</strong></h2>
+                    <p>
+                        Not only do we help you self-analyze and improve, but we also give you recommendations on areas to improve as well as resources from <b>YouTube</b>, <b>Coursera</b>, and <b>Web Articles</b>.
+                        Improve in areas you seem to be lacking in to be better prepared for your real challenge. Use these resources to improve and continue repeating these steps until you're confident in your abilities
+                        to perform.
+                    </p>
+                </div>
+                <div class="image1">
+                    <img src="assets/images/roadmap.png" alt="Training Roadmap">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
+</section>
+
+<style>
+    .container-5678 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .image-content-5678 {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .image-content-5678 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .text-content-5678 {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .arrow-content-5678 {
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
+    .text-content-5678 h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+    }
+
+    .text-content-5678 p {
+        font-size: 15px;
+        font-weight: normal;
+        color: #8a8a8a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; /* Added space */
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+    .text-content-5678 button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .business-btn-5678 {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+    .demo-btn-5678 {
+        background-color: #f8f9fa;
+        color: #333;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+    }
+
+
+    .logos-5678 img {
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-5678 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-content-5678, .text-content-5678, .arrow-content-5678 {
+            max-width: 100%;
+        }
+
+        .text-content-5678 {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .demo-btn-5678 {
+            margin-left: 0;
+        }
+
+        .arrow-content-5678 {
+            display: none; /* Hide arrow on mobile */
+        }
+    }
+</style>
+
+<div class="container-5678" style="align-content: center; display: flex; justify-content: center; align-items: center;">
+
+    <div class="text-content-5678" >
+        <h2 style="text-align: center">Want to try our product? Join our waitlist now to experience tailored mock interviews, expert feedback, and personalized preparation with WePrep's AI!</h2>
+        <div style="align-content: center; display: flex; justify-content: center; align-items: center;">
+            <button class="business-btn-5678" >Join Our Waiting List</button>
+            <button class="demo-btn-5678" >Contact Us</button>
+        </div>
+        <div class="logos-5678">
+
+        </div>
+    </div>
+</div>
+
+<!-- ***** Footer Start ***** -->
+<div id="footer-container"></div>
+<!-- ***** Footer End ***** -->
+
 
 <!-- jQuery -->
 <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -345,20 +466,43 @@
 <script src="assets/js/custom.js"></script>
 
 <script>
-  $(function () {
-    var selectedClass = "";
-    $("p").click(function () {
-      selectedClass = $(this).attr("data-rel");
-      $("#portfolio").fadeTo(50, 0.1);
-      $("#portfolio div")
-              .not("." + selectedClass)
-              .fadeOut();
-      setTimeout(function () {
-        $("." + selectedClass).fadeIn();
-        $("#portfolio").fadeTo(50, 1);
-      }, 500);
+    $(function () {
+        $("#preloader-container").load("reusableAssets/preloader.html");
+        $("#header-container").load("reusableAssets/header.html", function () {
+            // Highlight the active navigation link based on the current URL
+            var path = window.location.pathname;
+            var page = path.split("/").pop();
+
+            switch (page) {
+                case "index.html":
+                    $("#home-link").addClass("active");
+                    break;
+                case "howItWorks.html":
+                    $("#how-it-works-link").addClass("active");
+                    break;
+                case "about.html":
+                    $("#about-us-link").addClass("active");
+                    break;
+                default:
+                    // Handle other cases or set a default active link
+                    break;
+            }
+        });
+        $("#footer-container").load("reusableAssets/footer.html");
+
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div")
+                .not("." + selectedClass)
+                .fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+        });
     });
-  });
 </script>
 </body>
 </html>
