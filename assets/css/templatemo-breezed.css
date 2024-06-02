@@ -318,50 +318,42 @@ header
 ---------------------------------------------
 */
 
-.background-header {
-  background-color: #fff;
+.header-area {
+  background-color: #fff; /* Set the background color to white */
   height: 80px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
   right: 0px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
-}
-
-.background-header .logo,
-.background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
-}
-
-.background-header .main-nav .nav li:hover a {
-  color: #2a93d5!important;
-}
-
-.background-header .nav li a.active {
-  color: #2a93d5!important;
-}
-
-.header-area {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
   z-index: 100;
-  height: 100px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
 }
 
+.header-area .logo,
+.header-area .main-nav .nav li a {
+  color: #1e1e1e!important; /* Set the text color to match the new background */
+}
+
+.header-area .main-nav .nav li:hover a {
+  color: #2a93d5!important;
+}
+
+.header-area .nav li a.active {
+  color: #2a93d5!important;
+}
+
 .header-area .main-nav {
   min-height: 80px;
-  background: transparent;
+  background: #fff; /* Set background to white */
 }
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #fff;
+  color: #1e1e1e; /* Adjust the logo color */
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -372,7 +364,6 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-
 
 .header-area .main-nav .nav {
   float: right;
@@ -439,17 +430,11 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  color: #fff;
+  color: #1e1e1e; /* Adjust the link color */
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
-  opacity: 0.5;
-}
-
-.background-header .main-nav .nav li:hover a,
-.background-header .main-nav .nav li a.active {
   color: #2a93d5!important;
   opacity: 1;
 }
@@ -463,14 +448,10 @@ header
   font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
-  color: #fff;
+  color: #1e1e1e; /* Adjust the submenu arrow color */
   position: absolute;
   right: 18px;
   top: 12px;
-}
-
-.background-header .main-nav .nav li.submenu:after {
-  color: #7a7a7a;
 }
 
 .header-area .main-nav .nav li.submenu ul {
@@ -555,12 +536,6 @@ header
   left: 0;
 }
 
-.background-header .main-nav .menu-trigger span,
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
-}
-
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
   -moz-transition: all 0.4s;
@@ -574,11 +549,6 @@ header
   height: 2px;
   left: 0;
   width: 75%;
-}
-
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -622,19 +592,11 @@ header
   background-color: #1e1e1e;
 }
 
-.background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
-}
-
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
-}
-
-.background-header .main-nav .menu-trigger.active span:after {
   background-color: #1e1e1e;
 }
 
@@ -1334,7 +1296,7 @@ footer
 */
 
 footer {
-  padding: 80px 0px;
+  padding: 20px 0px;
   background: rgb(51,155,158);
   background: linear-gradient(145deg, #339b9e 0%, #2a93d5 100%);
 }

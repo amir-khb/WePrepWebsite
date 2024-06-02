@@ -1,0 +1,38 @@
+<!--WAITING LIST Modal -->
+<div class="modal fade" id="joinWaitlistModal" tabindex="-1" role="dialog" aria-labelledby="joinWaitlistModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinWaitlistModalLabel">Join Our Waiting List</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="waitlistForm">
+          <div class="form-group">
+            <label for="name">Name <span style="color: red; font-size: 22px">*</span></label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email" >Email <span style="color: red; font-size: 22px">*</span></label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea class="form-control" id="comments" rows="3" placeholder="Enter any additional comments"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--WAITING LIST Modal END-->
