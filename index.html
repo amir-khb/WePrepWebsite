@@ -120,6 +120,7 @@
         justify-content: space-between;
         padding: 20px;
         font-family: Arial, sans-serif;
+        flex-wrap: wrap; /* Add this line to allow wrapping */
     }
 
     .benefit-card4 {
@@ -130,6 +131,7 @@
         padding: 20px;
         width: 30%;
         text-align: center;
+        margin-bottom: 20px; /* Add margin to create space between cards */
     }
 
     .benefit-card4 img {
@@ -147,7 +149,20 @@
         font-size: 0.95em;
         color: #666;
     }
+
+    @media (max-width: 768px) {
+        .container4 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .benefit-card4 {
+            width: 100%;
+            max-width: 400px; /* Adjust the max-width as needed */
+        }
+    }
 </style>
+
 
 <div class="row">
     <div class="col-lg-12">
@@ -284,7 +299,11 @@
         }
 
         .image-container5 {
-            margin: 20px 0;
+            display: none; /* Hide arrow on mobile */
+        }
+
+        .text-container5 {
+            width: 80%;
         }
     }
 </style>
@@ -292,7 +311,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="section-heading" id="features1" style="margin-left: 17%">
+        <div class="section-heading" id="features1" style="text-align: center;">
             <h2>Your all in one solution for interview preparation</h2>
         </div>
     </div>
@@ -337,6 +356,7 @@
     }
 </script>
 
+
 <!-- ***** About Area Starts ***** -->
 <section class="section" id="about">
     <div class="container">
@@ -353,6 +373,7 @@
                 background-color: white;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                flex-wrap: wrap; /* Ensure the flex items wrap */
             }
 
             .text1 {
@@ -379,7 +400,25 @@
                 max-width: 100%;
                 border-radius: 8px;
             }
+
+            /* Media query for mobile devices */
+            @media (max-width: 768px) {
+                .section1 {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .text1 {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                .image1 {
+                    max-width: 100%;
+                }
+            }
         </style>
+
 
         <div class="row">
             <div class="col-lg-12">

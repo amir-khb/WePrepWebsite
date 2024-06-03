@@ -134,6 +134,70 @@
     }
 </style>
 
+<style>
+    .section11 {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap; /* Ensure the flex items wrap */
+    }
+
+    .text11 {
+        flex: 1;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .text11 h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .text11 p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .image11 {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .image11 img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+        .section11 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .text11 {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .image11 {
+            max-width: 100%;
+        }
+
+
+    }
+</style>
+
+
 
 <div class="container" style="padding-top: 20px">
     <div class="row" style="padding-bottom: 20px">
@@ -143,8 +207,8 @@
             </div>
         </div>
     </div>
-    <div class="section1">
-        <div class="text1">
+    <div class="section11">
+        <div class="text11">
             <p>At WePrep, optimization and productivity are at the core of our mission. Our cutting-edge AI models
                 provide realistic mock interviews, comprehensive expert feedback, and personalized preparation plans,
                 ensuring you are well-prepared for any professional endeavor, be it job interviews, presentations, sales
@@ -155,7 +219,7 @@
                 analytical precision to make the world your office and achieve your goals with confidence and
                 precision.</p>
         </div>
-        <div class="image1">
+        <div class="image11">
             <img src="assets/images/topImage.png" alt="Post a Job Opportunity">
         </div>
     </div>

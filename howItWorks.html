@@ -76,7 +76,7 @@
         <div class="row">
         </div>
         <style>
-            .section1 {
+            .section11 {
                 font-family: 'Roboto', sans-serif;
                 display: flex;
                 align-items: center;
@@ -86,31 +86,55 @@
                 background-color: white;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                flex-wrap: wrap; /* Ensure the flex items wrap */
             }
 
-            .text1 {
+            .text11 {
                 flex: 1;
                 margin-right: 20px;
+                margin-left: 20px;
             }
 
-            .text1 h2 {
+            .text11 h2 {
                 color: #333;
                 margin-bottom: 10px;
             }
 
-            .text1 p {
+            .text11 p {
                 color: #666;
                 margin-bottom: 20px;
             }
 
-            .image1 {
+            .image11 {
                 flex: 1;
                 max-width: 400px;
             }
 
-            .image1 img {
+            .image11 img {
                 max-width: 100%;
                 border-radius: 8px;
+            }
+
+
+
+            /* Media query for mobile devices */
+            @media (max-width: 768px) {
+                .section11 {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .text11 {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+
+                .image11 {
+                    max-width: 100%;
+                }
+
+
             }
         </style>
 
@@ -122,7 +146,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="section1" id="section1">
+            <div class="section11" id="section1">
                 <div class="circle-container">
                     <span contenteditable="true">1</span>
                 </div>
@@ -133,11 +157,11 @@
                         and what you are preparing for. Then simply press start and dive right into practice completely tailored to your needs.
                     </p>
                 </div>
-                <div class="image1">
+                <div class="image11">
                     <img src="assets/images/start-new-session.png" alt="Start a New Practice Session">
                 </div>
             </div>
-            <div class="section1" id="section1">
+            <div class="section11" id="section1">
                 <div class="circle-container">
                     <span contenteditable="true">2</span>
                 </div>
@@ -148,11 +172,11 @@
                         your <b>video</b>, <b>audio</b>, and <b>speech</b> while you focus on doing your best and giving your all.
                     </p>
                 </div>
-                <div class="image1">
+                <div class="image11">
                     <img src="assets/images/mock-interview.png" alt="Mock Interview">
                 </div>
             </div>
-            <div class="section1" id="section1">
+            <div class="section11" id="section1">
                 <div class="circle-container">
                     <span contenteditable="true">3</span>
                 </div>
@@ -163,11 +187,11 @@
                         your job easier and helps you improve and self-analyze in a comfortable, detailed, and quick manner
                     </p>
                 </div>
-                <div class="image1">
+                <div class="image11">
                     <img src="assets/images/feedback.png" alt="Feedback">
                 </div>
             </div>
-            <div class="section1" id="section1">
+            <div class="section11" id="section1">
                 <div class="circle-container">
                     <span contenteditable="true">4</span>
                 </div>
@@ -179,7 +203,7 @@
                         to perform.
                     </p>
                 </div>
-                <div class="image1">
+                <div class="image11">
                     <img src="assets/images/roadmap.png" alt="Training Roadmap">
                 </div>
             </div>
